@@ -11,7 +11,7 @@ public class Spinning : MonoBehaviour {
 	void Start () {
 	}
 	
-	
+	//moi aussi je suis passé.
 	void Update () {
 		
 		if(Input.GetKey(KeyCode.UpArrow)) {
