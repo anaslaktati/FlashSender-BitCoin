@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera2DFollow.cs" />
+     <Compile Include="Assets\Scripts\MenuScript.cs" />
      <Compile Include="Assets\Scripts\Position.cs" />
      <Compile Include="Assets\Scripts\Respawn.cs" />
      <Compile Include="Assets\Scripts\Spinning.cs" />
