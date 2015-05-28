@@ -4,7 +4,8 @@ using System.Collections;
 public class MainMenu : MonoBehaviour {
 
 	public void Practice(){
-		Application.LoadLevel ("TestScene");
+		//Application.LoadLevel ("TestScene");
+		Application.LoadLevel ("SelectLevel");
 	}
 
 	public void Play(){
