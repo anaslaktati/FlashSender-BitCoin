@@ -5,7 +5,7 @@ public class Spinning : MonoBehaviour {
 	
 	
 	public float rotationSpeed = 20f;
-	public string axisName = "Horizontal";
+	public string axisName = "Vertical";
 	public Rigidbody2D rb;
 	public float invRotationSpeed = -1;
 	
