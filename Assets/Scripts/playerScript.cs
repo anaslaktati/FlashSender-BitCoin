@@ -17,7 +17,7 @@ public class playerScript : MonoBehaviour
 	void Update()
 	{
 		// 3 - Retrieve axis information
-		float inputX = Input.GetAxis("Horizontal");
+		float inputX = Input.GetAxis("Vertical");
 
 
 		
