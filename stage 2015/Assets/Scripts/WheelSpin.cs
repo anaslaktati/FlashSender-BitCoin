@@ -13,12 +13,12 @@ public class WheelSpin : MonoBehaviour {
 
 	void Update () {
 		
-		if(Input.GetKey(KeyCode.LeftArrow)) {
+		if(Input.GetKey(KeyCode.UpArrow)) {
 			// Counter-clockwise
 			transform.Rotate(0, 0, 3.0f); 
 		}
 		
-		if(Input.GetKey(KeyCode.RightArrow)) {
+		if(Input.GetKey(KeyCode.DownArrow)) {
 			// clockwise
 			transform.Rotate(0, 0, -3.0f);
 		}
