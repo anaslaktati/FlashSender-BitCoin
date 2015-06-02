@@ -3,6 +3,9 @@ using System.Collections;
 
 public class BikeController : MonoBehaviour {
 
+	// TEST SCRIPT
+
+
 	public GameObject go;
 	public int power;
 	public int reverse;
@@ -45,6 +48,12 @@ public class BikeController : MonoBehaviour {
 	}
 }
 /**
+ * 
+ * 
+ * TEST AUTRE SCRIPT !
+ * 
+ * 
+ * 
 //reference to the wheel joints
 HingeJoint2D Hinge; 
 //center of mass of the car
