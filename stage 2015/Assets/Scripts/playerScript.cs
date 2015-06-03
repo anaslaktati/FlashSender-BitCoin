@@ -9,7 +9,7 @@ public class playerScript : MonoBehaviour
 	/// <summary>
 	/// 1 - The speed of the ship
 	/// </summary>
-	public Vector2 speed = new Vector2(50,50);
+	public Vector2 speed = new Vector2(10,50);
 	
 	// 2 - Store the movement
 	private Vector2 movement;
