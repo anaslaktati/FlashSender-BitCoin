@@ -57,9 +57,8 @@ public class WheelJointBikeMovement : MonoBehaviour {
 
 		dir = Input.GetAxis("Vertical");
 		if (dir != 0) {
-			print ("up");
 			frontWheel.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * elevation * Time.deltaTime);
-		}
+		} 
 	}
 	
 }
