@@ -32,6 +32,7 @@ public class WheelJointBikeMovement : MonoBehaviour {
 	public Transform frontWheel;
 
 	public int elevation = 5700;
+	public int invElevation = -2000;
 	
 	// Use this for initialization 
 	void Start () { 
@@ -46,7 +47,7 @@ public class WheelJointBikeMovement : MonoBehaviour {
 	//all physics based assignment done here
 	void FixedUpdate(){
 		slope = transform.localEulerAngles.z;
-		dir = Input.GetAxis("Horizontal");
+		dir = Input.GetAxis("Vertical");
 		if (dir != 0) {
 			motorBack.motorSpeed += dir * -50;
 			wheelJoints [1].motor = motorBack;
@@ -54,11 +55,17 @@ public class WheelJointBikeMovement : MonoBehaviour {
 			motorBack.motorSpeed = 0;
 			wheelJoints [1].motor = motorBack;
 		}
-
-		dir = Input.GetAxis("Vertical");
-		if (dir != 0) {
+		
+		dir = Input.GetAxis("Horizontal");
+		if (dir < 0) {
+			print ("up");
 			frontWheel.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * elevation * Time.deltaTime);
-		} 
+		}
+		if (dir > 0) {
+			print ("down");
+			frontWheel.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * invElevation * Time.deltaTime);
+		}
+		
 	}
 	
 }

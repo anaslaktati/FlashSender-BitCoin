@@ -3,13 +3,20 @@ using System.Collections;
 
 public class EndLevel : MonoBehaviour {
 
+	public GameObject player;
 	public string levelToLoad;//level we're playing
 	public string next;//the next level
 	public bool pause = false;
+	private WheelJointBikeMovement script;
+
+	void Awake(){
+		script = player.GetComponent<WheelJointBikeMovement> ();
+	}
 
 	void Start () {
 
-		Time.timeScale = 1;
+
+
 	}
 
 
@@ -18,7 +25,8 @@ public class EndLevel : MonoBehaviour {
 		pause = true;
 
 		if (pause) {
-			Time.timeScale = 0;
+			Time.timeScale=0;
+
 		}	
 	}
 
