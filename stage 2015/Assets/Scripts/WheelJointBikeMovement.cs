@@ -45,6 +45,7 @@ public class WheelJointBikeMovement : MonoBehaviour {
 	
 	//all physics based assignment done here
 	void FixedUpdate(){
+		print (transform.localEulerAngles.z);
 		slope = transform.localEulerAngles.z;
 		dir = Input.GetAxis("Horizontal");
 		if (dir != 0) {
@@ -56,7 +57,7 @@ public class WheelJointBikeMovement : MonoBehaviour {
 		}
 
 		dir = Input.GetAxis("Vertical");
-		if (dir != 0) {
+		if (dir != 0 && transform.localEulerAngles.z < 40) {
 			print ("up");
 			frontWheel.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * elevation * Time.deltaTime);
 		}
