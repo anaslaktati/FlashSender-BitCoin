@@ -8872,7 +8872,7 @@ Transform:
   - {fileID: 136316253}
   - {fileID: 1414042651}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!61 &1683527518
 BoxCollider2D:
   m_ObjectHideFlags: 0
