@@ -14,7 +14,7 @@ public class EndLevel : MonoBehaviour {
 	}
 
 	void Start () {
-		Time.timeScale = 0;
+		Time.timeScale = 1;
 
 
 	}
